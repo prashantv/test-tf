@@ -33,7 +33,7 @@ resource "chronosphere_monitor" "mon_chronoprom_memory_utilization_hi" {
 
     condition {
       severity = "warn"
-      value    = 60
+      value    = 40
       op       = "GT"
       sustain  = "180s"
     }
