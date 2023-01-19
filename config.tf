@@ -26,14 +26,14 @@ resource "chronosphere_monitor" "mon_chronoprom_memory_utilization_hi" {
   series_conditions {
     condition {
       severity = "critical"
-      value    = 60
+      value    = 50
       op       = "GT"
       sustain  = "180s"
     }
 
     condition {
       severity = "warn"
-      value    = 50
+      value    = 60
       op       = "GT"
       sustain  = "180s"
     }
